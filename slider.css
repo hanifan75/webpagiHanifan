@@ -7,23 +7,30 @@
     background-color: rgb(26, 107, 37);
 }
 
+.slider-isi img{
+    width: 700px;
+    height: 310px;
+    float: left;
+}
+
 .slider-isi{
-    position: absolute;
-    width: 3900px;
+    position: relative;
+    width: 5000px;
+
     animation-name: gambar;
-    animation-duration: 16s;
+    animation-duration: 8s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     -webkit-animation-name: gambar;
-    -webkit-animation-duration: 16s;
+    -webkit-animation-duration: 8s;
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-name: gambar;
-    -moz-animation-duration: 16s;
+    -moz-animation-duration: 8s;
     -moz-animation-timing-function: ease-in-out;
     -moz-animation-iteration-count: infinite;
     -o-animation-name: gambar;
-    -o-animation-duration: 16s;
+    -o-animation-duration: 8s;
     -o-animation-timing-function: ease-in-out;
     -o-animation-iteration-count: infinite;
 }
@@ -35,20 +42,14 @@
     -o-animation-play-state: paused;
 }
 
-.slider-isi img{
-    width: 700px;
-    height: 310px;
-    float: left;
-}
-
 .slider1:after{
-    position: absolute;
+    position: relative;
     z-index: 12;
     left: 300px; top: 80px;
     transition: 1s all ease-in-out;
-    -webkit-transition: ease-in-out;
-    -moz-transition: ease-in-out;
-    -o-transition: ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
 }
 
 /* slider1:hover ::after{
@@ -60,10 +61,10 @@
         left: 0; opacity: 0;
     }
     2%{
-        opcatity: 1;
+        opacity: 1;
     }
     20%{
-      left: 0;  opcatity: 0;
+      left: 0;  opacity: 1;
     }
     21%{
         opacity: 0;
@@ -114,10 +115,10 @@
         left: 0; opacity: 0;
     }
     2%{
-        opcatity: 1;
+        opacity: 1;
     }
     20%{
-      left: 0;  opcatity: 0;
+      left: 0;  opacity: 0;
     }
     21%{
         opacity: 0;
@@ -168,10 +169,10 @@
         left: 0; opacity: 0;
     }
     2%{
-        opcatity: 1;
+        opacity: 1;
     }
     20%{
-      left: 0;  opcatity: 0;
+      left: 0;  opacity: 0;
     }
     21%{
         opacity: 0;
