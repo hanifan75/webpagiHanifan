@@ -1,49 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        a:link {
-          color: rgb(56, 138, 56);
-          background-color: transparent;
-          text-decoration: none;
-        }
-        a:visited {
-          color: rgb(14, 1, 3);
-          background-color: transparent;
-          text-decoration: none;
-        }
-        a:hover {
-          color: rgba(255, 0, 0, 0.925);
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        a:active {
-          color: rgb(37, 201, 78);
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor=#e3ffb3>
-    <h1><center>CURRICULUM VITAE</center></h1><hr>
+<body>
+    <h1><center>CURRICULUM VITAE</center></h1>
 
-    <!-- Hyperlink di tengah -->
-    <center>
-        <table border="0">
-            <tr>
-                <td>|</td><td><a href="iframe.html" target="blank">Menu iFrame</a></td>
-                <td>|</td><td><a href="form.html" target="blank">Form</a></td>
-                <td>|</td><td><a href="tabel.html" target="blank">Tabel</a></td>
-                <td>|</td><td><a href="span.html" target="blank">Menu Span</a></td><td>|</td>
-            </tr>
-        </table>
-    </center>
-    
-    <hr>
+    <!-- Navbar -->
+    <!-- <div>
+      <ul class="navbar">
+        <li class="menu"><a href="iframe.html" target="blank">menu iFrame</a></li>
+        <li class="drop"><a href="form.html" target="blank">form</a></li>
+          <ul class="drop-item">
+            <li><a href="form.html" target="blank">Form Pendaftaran</a></li>
+            <li><a href="form.html" target="blank">Form Login</a></li>
+          </ul>
+        <li class="menu"><a href="tabel.html" target="blank">tabel</a></li>
+        <li class="menu"><a href="span.html" target="blank">menu span</a></li>
+      </ul>
+    </div> -->
+
+    <div class="menu-wrap">
+      <ul>
+        <li><a href="iframe.html" target="blank">menu iFrame</a></li>
+        <li><a href="form.html" target="blank">form</a>
+          <ul>
+            <li><a href="form.html" target="blank">Pendaftaran</a></li>
+            <li><a href="form.html" target="blank">Login</a></li>
+          </ul>
+        <li><a href="tabel.html" target="blank">tabel</a></li>
+          <ul>
+            <li><a href="#tabel1">Tabel 1</a></li>
+            <li><a href="#tabel2">Tabel 2</a></li>
+          </ul>
+        <li><a href="span.html" target="blank">menu span</a></li>
+      </ul>
+      </div>
 
     <center>
                
@@ -51,7 +47,7 @@
 
         <!-- 1. row biodata dan foto -->
         <tr>
-        <td><b>DATA PRIBADI</b><hr></td>    
+        <td class="subjudul">DATA PRIBADI</td>    
         </tr>
 
         <tr>
@@ -124,31 +120,31 @@
 
         <!-- 2. row pendidikan -->   
         <tr>
-        <td><b>RIWAYAT PENDIDIKAN</b><hr></td>    
+        <td class="subjudul">RIWAYAT PENDIDIKAN</td>    
         </tr>
         
         <ul>
         <tr>
         <!-- SD -->
-        <td><li>SD Negeri 82 Banda Aceh</li></td>
+        <td>SD Negeri 82 Banda Aceh</td>
         <td colspan="2" align="center">Tahun Lulus 2007</td>
         </tr>    
 
         <tr>
         <!-- MTs -->
-        <td><li>MTsN Model Banda Aceh</li></td>
+        <td>MTsN Model Banda Aceh</td>
         <td colspan="2" align="center">Tahun Lulus 2010</td>
         </tr>
 
         <tr>
         <!-- SMA -->
-        <td><li>SMA Swasta Laboratorium Unsyiah Banda Aceh</li></td>
+        <td>SMA Swasta Laboratorium Unsyiah Banda Aceh</td>
         <td colspan="2" align="center">Tahun Lulus 2013</td>
         </tr>
 
         <tr>
         <!-- S1 -->
-        <td><li>Universitas Syiah Kuala</li></td>
+        <td>Universitas Syiah Kuala</td>
         <td colspan="2"  align="center">Tahun Lulus 2019</tr>
         </tr>
         </ul>
@@ -159,7 +155,7 @@
 
         <!-- 3. kemampuan dan pengalaman kerja -->    
         <tr>
-        <td><b>KEMAMPUAN YANG DIMILIKI</b><hr></td>    
+        <td class="subjudul">KEMAMPUAN YANG DIMILIKI</td>    
         </tr>
 
         <tr>
@@ -173,17 +169,17 @@
         <!-- Pengalaman Kerja -->
 
         <tr>
-        <td><b>PENGALAMAN KERJA</b><hr></td>    
+        <td class="subjudul">PENGALAMAN KERJA</td>    
         </tr>
 
         <ul>
         <tr>
-        <td><li>Magang (Staff) BMKG Indrapuri Stasiun Klimatologi</li></td>
+        <td>Magang (Staff) BMKG Indrapuri Stasiun Klimatologi</td>
         <td colspan="2" align="center">Tahun 2016</td>
         </tr>
 
         <tr>
-        <td><li>Asisten Pemateri Pelatihan SIG Universitas Teuku Umar</li></td>
+        <td>Asisten Pemateri Pelatihan SIG Universitas Teuku Umar</td>
         <td colspan="2" align="center">Tahun 2019</td>
         </tr>
         </ul>
@@ -199,6 +195,17 @@
 
     
         </table>
+    </center>
+
+    <center>
+      <div class=slider>
+        <div class=slider-item>
+          <img src="img/1.jpg" alt="gambar1">
+          <img src="img/2.jpg" alt="gambar2">
+          <img src="img/3.jpg" alt="gambar3">
+          <img src="img/4.jpg" alt="gambar4">
+        </div>
+      </div>
     </center>
 </body>
 </html>

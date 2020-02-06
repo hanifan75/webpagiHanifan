@@ -1,0 +1,114 @@
+.slider1{
+    border: 5px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    width: 700px;
+    height: 310px;
+    background-color: red;
+}
+
+.slider-isi{
+    position: absolute;
+    width: 3900px;
+    animation-name: gambar;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: gambar;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: gambar;
+    -moz-animation-duration: 15s;
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-name: gambar;
+    -o-animation-duration: 15s;
+    -o-animation-timing-function: ease-in-out;
+    -o-animation-iteration-count: infinite;
+}
+
+.slider-isi:hover{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+}
+
+.slider-isi img{
+    width: 700px;
+    height: 310px;
+    float: left;
+}
+
+.slider1:after{
+    /* font-size: ; */
+    position: absolute;
+    z-index: 12;
+    /* color: ; */
+    left: 300px; top: 80px;
+    transition: 1s all ease-in-out;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
+
+/* slider1:hover ::after{
+    
+} */
+
+@keyframes gambar{
+    0%{
+        left: 0; opacity: 0;
+    }
+    2%{
+        opcatity: 1;
+    }
+    20%{
+      left: 0;  opcatity: 0;
+    }
+    21%{
+        opacity: 0;
+    }
+    24%{
+        opacity: 0;
+    }
+    25%{
+        left:-700px; opacity: 1;
+    }
+    45%{
+        left: -700px; opacity: 1;
+    }
+    46%{
+        opacity: 0;
+    }
+    48%{
+        opacity: 0;
+    }
+    50%{
+        left: -1400px; opacity: 1;
+    }
+    70%{
+        left: -1400px; opacity: 1;
+    }
+    72%{
+        
+    }
+    74%{
+
+    }
+    75%{
+
+    }
+    95%{
+
+    }
+    97%{
+
+    }
+    100%{
+
+    }
+}
+
