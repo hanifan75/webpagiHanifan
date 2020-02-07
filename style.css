@@ -81,6 +81,87 @@ table{
     padding: 20px;
 }
 
+.contain{
+    margin-left: 500px;
+    margin-top: 50px;
+}
+
+.kotak1{
+    border: 5px white solid;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(yellow,black);
+}
+
+.kotak1:hover{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(black,yellow);
+}
+
+.kotak2{
+    position: relative;
+    border: 5px white solid;
+    bottom: 110px;
+    left: 120px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(yellow,black);
+}
+
+.kotak2:hover{
+    position: relative;
+    bottom: 110px;
+    left: 120px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(black,yellow);
+}
+
+.kotak3{
+    position: relative;
+    border: 5px white solid;
+    bottom: 220px;
+    left: 240px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(yellow,black);
+}
+
+.kotak3:hover{
+    position: relative;
+    bottom: 220px;
+    left: 240px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    text-align: center;
+    background: linear-gradient(black,yellow);
+}
+
+.foot{
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: rgb(22, 61, 26);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.item{
+    margin-top: 10px;
+    margin-left: 44%;
+    list-style: none;
+    display: flex;
+}
+
 .slider{
     border: 2px solid;
     position: relative;

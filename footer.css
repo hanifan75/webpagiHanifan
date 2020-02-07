@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.foot{
+    float: left;
+    position: relative;
+    width: 100%;
+    background-color: rgb(22, 61, 26);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.item{
+    margin-top: 10px;
+    margin-left: 44%;
+    list-style: none;
+    display: flex;
+}
