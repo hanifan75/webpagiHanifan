@@ -3,18 +3,44 @@
     padding: 0;
 }
 
-.foot{
-    float: left;
-    position: relative;
+footer{
+    top:600px;
+    position: absolute;
     width: 100%;
     background-color: rgb(22, 61, 26);
-    color: #fff;
     text-transform: uppercase;
 }
 
-.item{
-    margin-top: 10px;
-    margin-left: 44%;
-    list-style: none;
-    display: flex;
+.item img{
+    position: relative;
+    background-color: white;
+    top: 1px;
+    border-radius: 20px;
+    width: 45px;
+    z-index: 10px;
+}
+
+.item img:hover{
+    position: relative;
+    background-color: rgb(251, 255, 0);
+    top: 1px;
+    border-radius: 20px;
+    width: 45px;
+    z-index: 10px;
+}
+
+
+.judul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    bottom: 35px;
+    margin-left:44%;
+    color: #fff;
+}
+
+.map{
+    position: relative;
+    margin-left: 70%;
 }
