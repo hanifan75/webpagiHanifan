@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <title>Index</title>
     <?php
     include"header.php";
@@ -237,12 +238,17 @@
 <?php
     include"footer.php";
 =======
+=======
+>>>>>>> 0537a8a4bb0496cb1dd1a9f3119cce4db30b7e64
     <title>Document</title>
 </head>
 <body>
     <?php
         echo "Hello World";
         print "I'm learning PHP Script Lnaguage now";
+<<<<<<< HEAD
+>>>>>>> 0537a8a4bb0496cb1dd1a9f3119cce4db30b7e64
+=======
 >>>>>>> 0537a8a4bb0496cb1dd1a9f3119cce4db30b7e64
     ?>
 </body>
