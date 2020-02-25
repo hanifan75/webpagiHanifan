@@ -7,7 +7,7 @@ include'../koneksi/koneksi.php';
         $pass=$_POST['pass'];
 
     // query sql
-    $login=mysqli_query($koneksi,"SELECT * FROM user WHERE nama_user='$user' AND pass_user='$pass'");
+    $login=mysqli_query($koneksi,"SELECT * FROM user WHERE nama_user='$user' AND pass_user=md5('$pass')");
 
     // pengecekan data
     $cek=mysqli_num_rows($login);
@@ -24,6 +24,7 @@ include'../koneksi/koneksi.php';
             alert('Welcome Back Admin');
             window.location.href='../form_nilai.php';
             </script>";
+
         }else if($data['level']=="pembeli"){
             $_SESSION['nama_user']=$data['nama_user'];
             $_SESSION['level']=$data['level'];
@@ -35,7 +36,10 @@ include'../koneksi/koneksi.php';
             </script>";
         }
     }else{
-        echo "Username atau Password salah";
+        echo "<script>
+            alert('Username atau Password salah');
+            history.go(-1);
+            </script>";
     }
 
         // if($user=="admin" && $pass=="admin123"){
