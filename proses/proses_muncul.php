@@ -8,8 +8,14 @@
         include '../koneksi/koneksi.php';
         include '../header.php';
     ?>
+    <style>
+        a{ text-decoration: none;}
+        b{ font-size: 30px; color: black;}
+    </style>
 </head>
 <body>
+
+<a href="../form_barang.php"><img src="../html/img/back.png" width="20px"><b>Kembali</b></a>
 <?php
 
     if(isset($_POST['show'])){

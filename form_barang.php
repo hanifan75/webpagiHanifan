@@ -11,7 +11,8 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="text-center">Input Stok Barang</h2><br>
+        <h2 class="card-header text-center bg-success">Input Stok Barang</h2><br>
+        <div class="card-body bg-secondary text-light">
             <form action="proses/proses_input.php" method="POST">
             <div class="form-group w-75">
                 <label>Masukkan Nama Barang</label><br>
@@ -29,12 +30,19 @@
                 <label>Masukkan Kategori</label><br>
                 <input type="text" class="form-control" name="kategori">
             </div>
-            <input type="submit" class="btn btn-primary" name="submit" value="Masukkan">
+            <div class="form-row">
+                <div class="form-group col-md-1">
+                <input type="submit" class="btn btn-primary" name="submit" value="Masukkan">
+                </div>
             </form>
-            <br>
             <form action="proses/proses_muncul.php" method="POST">
-            <input type="submit" class="btn btn-primary" name="show" value="Munculkan Barang">
+                <div class="form-group col-md-1">
+                <input type="submit" class="btn btn-success" name="show" value="Munculkan Barang">
+                </div>
             </form>
+            </div>
+            </div>
+        </div>
     <?php
     include"footer.php";
     ?>

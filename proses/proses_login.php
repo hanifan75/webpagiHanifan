@@ -1,6 +1,7 @@
 <?php
 
-include'../koneksi/koneksi.php';
+include '../koneksi/koneksi.php';
+session_start();
 
     if(isset($_POST['login'])){
         $user=$_POST['user'];
@@ -22,7 +23,7 @@ include'../koneksi/koneksi.php';
 
             echo"<script>
             alert('Welcome Back Admin');
-            window.location.href='../form_nilai.php';
+            window.location.href='../home.php';
             </script>";
 
         }else if($data['level']=="pembeli"){
@@ -32,7 +33,7 @@ include'../koneksi/koneksi.php';
 
             echo"<script>
             alert('Selamat Datang $user');
-            window.location.href='../diskon.php';
+            window.location.href='../home.php';
             </script>";
         }
     }else{

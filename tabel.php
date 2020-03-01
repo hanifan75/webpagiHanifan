@@ -23,6 +23,11 @@
                 <td>A</td>
                 <td>08</td>
             </tr>
+            <tr>
+                <td>2</td>
+                <td>B</td>
+                <td>07</td>
+            </tr>
         </tbody>
     </table>
 </body>

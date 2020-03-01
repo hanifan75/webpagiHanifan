@@ -1,6 +1,7 @@
 <?php
 
-include'../koneksi/koneksi.php';
+include '../koneksi/koneksi.php';
+session_start();
 
 
 if($_POST['pass']==$_POST['conpass']){
