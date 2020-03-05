@@ -23,7 +23,7 @@ session_start();
 
             echo"<script>
             alert('Welcome Back Admin');
-            window.location.href='../home.php';
+            window.location.href='../admin/index.php';
             </script>";
 
         }else if($data['level']=="pembeli"){
